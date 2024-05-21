@@ -1,0 +1,71 @@
+/* 폰트 패밀리 적용 */
+/* Regular */
+@font-face {
+  font-family: 'Noto Sans KR'; font-weight: 400; font-style: normal;
+  src: url('./NotoSansKR-Regular.ttf') format('truetype');
+}
+
+/* Medium */
+@font-face {
+  font-family: 'Noto Sans KR'; font-weight: 500; font-style: normal;
+  src: url('./NotoSansKR-Medium.ttf') format('truetype');
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Noto Sans KR'; font-weight: 600; font-style: normal;
+  src: url('./NotoSansKR-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans KR'; font-weight: 700; font-style: normal;
+  src: url('./NotoSansKR-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans KR'; font-weight: 800; font-style: normal;
+  src: url('./NotoSansKR-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Marvello'; font-weight: 500; font-style: normal;
+  src: url('./Marvello-Regular.ttf') format('truetype');
+}
+
+
+/* 폰트 기본 두께 */
+:root {
+  --font-size-Reqular: 400;
+  --font-size-Medium: 500;
+  --font-size-SemiBold: 600;
+  --font-size-Bold: 700;
+  --font-size-ExtraBold: 800;
+}
+body {font-weight: var(--font-size-Medium);}
+h1 {font-weight: var(--font-size-ExtraBold);}
+h2,h3,h4,h5,h6 {font-weight: var(--font-size-SemiBold);}
+div, p, span, button {font-weight: var(--font-size-Reqular);}
+
+* {font-family: 'Noto Sans KR'; font-weight: 500;} 
+/* Pretendard */
+
+
+/* 반응형 대응 텍스트 */
+body {font-size: calc(0.5vw + 1vh + 0%);}
+h1 {font-size: calc(3vw + 1vh + 0%);}
+h2 {font-size: calc(2.3vw + 1vh + 0%);}
+h3 {font-size: calc(2.1vw + 1vh + 0%);}
+h4 {font-size: calc(1.75vw + 1vh + 0%);}
+h5 {font-size: calc(1.45vw + 1vh + 0%);}
+h6 {font-size: calc(1.2vw + 1vh + 0%);}
+div,p,span,input,button {font-size: calc(0.5vw + 1vh + 0%);}
+
+/* PC 기준으로 해상도 1366 이상은 폰트 사이즈 고정 */
+/* p 태그가 16px 일 때 기준 */
+@media (min-width: 1366px) {
+  h1 {font-size: 47.78px;}
+  h2 {font-size: 39.81px;}
+  h3 {font-size: 33.18px;}
+  h4 {font-size: 27.65px;}
+  h5 {font-size: 23.04px;}
+  h6 {font-size: 19.2px;}
+  p {font-size: 16px;}
+}

@@ -1,0 +1,17 @@
+.state {
+  display: grid;
+  width: 200px;  
+  padding: 8px;
+}
+.send-state {
+  background: #333;
+}
+.object-state {
+  background: #ccc;
+}
+.array-filter-state {
+  background: #eee;
+}
+.array-slice-state {
+  background: #888;
+}

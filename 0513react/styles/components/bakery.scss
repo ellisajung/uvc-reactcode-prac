@@ -1,0 +1,76 @@
+$color1: purple;
+$color2: royalblue;
+$color3: khaki;
+
+@mixin sugar($color) {
+  background: $color;
+  border: 4px dashed #000;
+}
+
+// [1] 일반 css
+// .style-bakery ul {
+//   height: 100px;
+//   border: 1px solid #000;
+// }
+// .style-bakery ul li {}
+// .style-bakery ul li .bread-mocha {color: orange;}
+// .style-bakery ul li .bread-salt  {color: green;}
+
+// [2] css 전처리 도구를 사용해서 네스팅 가능한 코드
+.style-bakery {
+  .scss { color: red;
+    @include sugar($color3);
+  }
+  ul {
+    height: 100px;
+    border: 1px solid #000;
+    li {
+      // [1]
+      .bread-mocha {color: orange;}
+      .bread-salt  {color: green;}
+      .bread-cream {color: skyblue;}
+      // [2]
+      .cafe {
+        &-mocha {color: violet; @extend .scss}
+        &-salt  {color: tomato;}
+        &-cream {color: aqua;}
+      }
+    }
+  }
+  .bread {
+    @include sugar($color2);
+    position: relative;
+    &:hover {opacity: .5;}
+    &::before {
+      content: '텍스트';
+      position: absolute;
+      left: 0; top: 0;
+    }
+    .mocha {color: $color1;}
+    .salt  {color: $color2;}
+    .cream {color: $color3;}
+  }
+  @for $i from 1 through 5 {
+    .coffee-#{$i} {
+      background-color: hsl(50, 100%, 20% * $i);
+      padding: 8px;
+      display: inline-flex;
+      color: darken(#fff, 20% * $i);
+    }
+  }
+  $theme: "dark";
+
+  .theme {
+    padding: 24px;
+    border: none;
+    @if $theme == "dark" {
+      background-color: black;
+      color: white;
+    } @else {
+      background-color: white;
+      color: black;
+    }
+  }
+  .dark {background: #333; color: #fff;}
+  .light {background: #fff; color: #333;}
+}

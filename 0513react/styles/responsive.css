@@ -1,0 +1,25 @@
+/* 1 */
+/* 대형 PC 기준 */
+@media (min-width: 1367px) {
+  body {background-color: #f6ffc6;}
+}
+
+/* 2 */
+/* 소형 PC 기준 */
+@media (min-width: 961px) and (max-width: 1366px) {
+  body {background-color: #eee;}
+}
+/* 태블릿 기준 */
+@media (min-width: 601px) and (max-width: 960px) {
+  body {background-color: #ccc;}
+}
+
+/* 3 */
+/* 모바일 기준 */
+@media (max-width: 600px) {
+  body {background-color: #333;}
+}
+/* 초소형 모바일 기준 (갤럭시 플립)*/
+@media (max-width: 280px) {
+  body {background-color: #222;}
+}

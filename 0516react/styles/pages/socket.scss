@@ -1,0 +1,22 @@
+.socket {
+  display: grid;
+  gap: 24px;
+  .socket-chat {
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    overflow: scroll;
+    p {
+      margin: 8px 0;
+    }
+  }
+  .socket-form {
+    form {
+      display: flex;
+      gap: 8px;
+      input {
+        padding: 8px;
+      }
+    }
+  }
+}

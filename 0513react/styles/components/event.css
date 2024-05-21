@@ -1,0 +1,13 @@
+:root {
+  --color-1: #ddd;
+  --font-1: 1rem;
+}
+
+.event {
+  padding: 16px;
+  margin-bottom: 24px;
+  background: var(--color-1);
+}
+
+.event-scroll { height: 100px; overflow: scroll; background: #ddd; }
+.event-scroll .scroll { width: 100px; height: 1000px; background: #333; color: white; }

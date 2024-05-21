@@ -1,0 +1,7 @@
+@import url('@styles/components/header.css');
+@import url('@styles/components/footer.css');
+@import './components/box.css';
+
+@import '@styles/pages/sign.css';
+@import '@styles/pages/user.css';
+

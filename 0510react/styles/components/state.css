@@ -1,0 +1,19 @@
+.status-state {
+  background: #eee;
+}
+
+.choose-state {
+  background: #ddd;
+}
+
+.choose-input-state {
+  background: #ccc;
+}
+
+.reducer-state {
+  background: #ddd;
+}
+
+.reducer-context-state {
+  background: #aaa;
+}
