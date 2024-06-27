@@ -1,6 +1,20 @@
-import { Link } from "react-router-dom"
-import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/src/components/ui/tooltip"
-import { CirclePlus, Home, LogIn, LogOut, Pencil, Settings, TableProperties, User, } from "lucide-react"
+import { Link } from "react-router-dom";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+  TooltipProvider,
+} from "@/src/components/ui/tooltip";
+import {
+  CirclePlus,
+  Home,
+  LogIn,
+  LogOut,
+  Pencil,
+  Settings,
+  TableProperties,
+  User,
+} from "lucide-react";
 
 export const SideNav = () => {
   return (
@@ -105,5 +119,5 @@ export const SideNav = () => {
         </nav>
       </aside>
     </TooltipProvider>
-  )
-}
+  );
+};

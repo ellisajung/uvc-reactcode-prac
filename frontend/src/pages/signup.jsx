@@ -79,7 +79,7 @@ export function SignUp() {
     }
     try {
       const data = await signUpUser({
-        userEmail,
+        email: userEmail,
         username: userName,
         password,
         groups,
